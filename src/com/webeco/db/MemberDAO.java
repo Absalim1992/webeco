@@ -322,7 +322,7 @@ public class MemberDAO {
 	public List<OrderItem> getOrderItems(int orderID)
 	{
 		List<OrderItem> list = new ArrayList<>();
-		String sql = "select productId,quantity,subTotal from orderItem where oId=?";
+		String sql = "select orderId,productId,quantity,sumOfItem from orderItem where orderId=?";
 		
 		try(Connection conn = DBConnectionManager.getConnection()){
 			PreparedStatement ps = conn.prepareStatement(sql);

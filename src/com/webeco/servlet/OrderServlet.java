@@ -94,7 +94,7 @@ public class OrderServlet extends HttpServlet {
 			MemberService.addOrderItem(new OrderItem(orderID, cart.get(i).getPid(),user, cart.get(i).getQuantity(), subTotal));
 		}
 		//code to pass the values to a new .jsp and display order
-		request.setAttribute("CART", cart);
+		session.setAttribute("CART", cart);
 		request.setAttribute("ORDERID", orderID);
 		request.setAttribute("SUBTOTAL", subTotalBill);
 		request.setAttribute("ORDERDATE", orderDate);

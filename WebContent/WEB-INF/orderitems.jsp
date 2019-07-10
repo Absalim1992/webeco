@@ -15,7 +15,7 @@
 		int i =0;
 	%>
 <h1><%=user %>'s previous Order</h1><br/>
-<pre>												<a href="index.jsp">Home</a></pre><br/><br/>
+<pre>												<a href="MenuServlet">Home</a></pre><br/><br/>
 
 <table border="1">
 			<thead>

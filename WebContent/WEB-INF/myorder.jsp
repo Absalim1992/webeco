@@ -41,13 +41,13 @@
 	%>
 		<tr>
 			<td><%= i%></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getOrderId() %>"><%= o.getOrderId() %></a></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getOrderDate() %>"><%= o.getOrderDate() %></a></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getDlvDate() %>"><%= o.getDlvDate() %></a></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getSubtotal() %>"><%= o.getSubtotal() %></a></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getTax() %>"><%= o.getTax() %></a></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getGrandtotal() %>"><%= o.getGrandtotal() %></a></td>
-			<td><a href="OrderItemsServlet?o=<%= o.getStatus() %>"><%= o.getStatus() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getOrderId() %>"><%= o.getOrderId() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getOrderDate() %>"><%= o.getOrderDate() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getDlvDate() %>"><%= o.getDlvDate() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getSubtotal() %>"><%= o.getSubtotal() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getTax() %>"><%= o.getTax() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getGrandtotal() %>"><%= o.getGrandtotal() %></a></td>
+			<td><a href="OrderItemServlet?o=<%= o.getStatus() %>"><%= o.getStatus() %></a></td>
 		</tr>
 	
 	<%
